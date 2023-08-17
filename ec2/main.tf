@@ -30,7 +30,7 @@ cidr_blocks = ["0.0.0.0/0"]
 }
 resource "aws_route53_record" "record" {
   zone_id = "Z10218511FGAD8YC6L1HI"
-  name    = "${var.component}-${var.env}-shujadevops.online"
+  name    = "${var.component}-${var.env}.shujadevops.online"
   type    = "A"
   ttl     = 300
   records = [aws_instance.ec2.private_ip]
