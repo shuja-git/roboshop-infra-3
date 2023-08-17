@@ -10,10 +10,11 @@ resource "aws_instance" "ec2" {
   tags = {
     Name = var.component
   }
-
+}
+resource "null_resource" "provisioner" {
   provisioner "remote-exec" {
     connection {
-      host = self.public_ip
+      host = aws_instance.ec2.public_ip
       user = "centos"
       password = "DevOps321"
     }
@@ -24,6 +25,7 @@ resource "aws_instance" "ec2" {
     ]
   }
 }
+
 resource "aws_security_group" "sg" {
   name = "${var.component}-${var.env}-sg"
 description = "Allow all traffic via Terraform"
