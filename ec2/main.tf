@@ -10,6 +10,19 @@ resource "aws_instance" "ec2" {
   tags = {
     Name = var.component
   }
+
+  provisioner "remote-exec" {
+    connection {
+      host = self.public_ip
+      user = "centos"
+      password = "DevOps321"
+    }
+    inline = [
+      "git clone https://github.com/shuja-git/roboshop-shell",
+      "cd roboshop-shell",
+      "sudo bash ${var.component}.sh"
+    ]
+  }
 }
 resource "aws_security_group" "sg" {
   name = "${var.component}-${var.env}-sg"
