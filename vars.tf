@@ -27,18 +27,22 @@ variable "instnces" {
     mysql = {
       name = "mysql"
       type = "t2.micro"
+      password = "Roboshop@123"
     }
     shipping = {
       name = "shipping"
       type = "t2.micro"
+      password = "Roboshop@123"
     }
     rabbitmq = {
       name = "rabbitmq"
       type = "t2.micro"
+      password = "roboshop123"
     }
     payment = {
       name = "payment"
       type = "t2.micro"
+      password = "roboshop123"
     }
 
 
