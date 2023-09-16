@@ -18,12 +18,8 @@ parameters = [
   {name="dev.catalogue.mongo_url",value="mongodb://mongo-dev.shujadevops.online:27017/catalogue",type="String"},
   {name="dev.cart.redis_host",value="redis-dev.shujadevops.online",type="String"},
   {name="dev.cart.catalogue_host",value="catalogue-dev.shujadevops.online",type="String"},
-  {name="dev.cart.catalogue_hort",value="8080",type="String"},
+  {name="dev.cart.catalogue_port",value="8080",type="String"},
 ]
-
-#Environment=REDIS_HOST={{ lookup('amazon.aws.aws_ssm', '{{env}}.{{component}}.redis_host',region='us-east-1') }}
-#Environment=CATALOGUE_HOST={{ lookup('amazon.aws.aws_ssm', '{{env}}.{{component}}.catalogue_host',region='us-east-1') }}
-#Environment=CATALOGUE_PORT={{ lookup('amazon.aws.aws_ssm', '{{env}}.{{component}}.catalogue_port',region='us-east-1') }}
 
 
 
