@@ -1,7 +1,7 @@
 instances = {
   frontend = {
     name = "frontend"
-    type = "t2.micro"
+    type = "t3.small"
   }
   mongodb = {
     name = "mongodb"
@@ -9,7 +9,7 @@ instances = {
   }
   catalogue = {
     name = "catalogue"
-    type = "t2.micro"
+    type = "t3.small"
   }
   redis = {
     name = "redis"
@@ -17,11 +17,11 @@ instances = {
   }
   user = {
     name = "user"
-    type = "t2.micro"
+    type = "t3.small"
   }
   cart = {
     name = "cart"
-    type = "t2.micro"
+    type = "t3.small"
   }
   mysql = {
     name = "mysql"
@@ -37,7 +37,7 @@ instances = {
   }
   payment = {
     name = "payment"
-    type = "t2.micro"
+    type = "t3.small"
   }
 }
 env = "dev"
