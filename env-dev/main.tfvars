@@ -13,7 +13,7 @@ instances = {
   }
   redis = {
     name = "redis"
-    type = "t2.micro"
+    type = "t3.small"
   }
   user = {
     name = "user"
@@ -25,15 +25,15 @@ instances = {
   }
   mysql = {
     name = "mysql"
-    type = "t2.micro"
+    type = "t3.small"
   }
   shipping = {
     name = "shipping"
-    type = "t2.micro"
+    type = "t3.small"
   }
   rabbitmq = {
     name = "rabbitmq"
-    type = "t2.micro"
+    type = "t3.small"
   }
   payment = {
     name = "payment"
