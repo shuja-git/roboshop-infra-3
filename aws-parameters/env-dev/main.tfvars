@@ -18,11 +18,15 @@ parameters = [
   {name="dev.catalogue.mongo_url",value="mongodb://mongodb-dev.shujadevops.online:27017/users",type="String"},
   {name="dev.cart.redis_host",value="redis-dev.shujadevops.online",type="String"},
   {name="dev.cart.catalogue_host",value="catalogue-dev.shujadevops.online",type="String"},
-  {name="dev.cart.catalogue_port",value="8080",type="String"},
+  {name="dev.cart.catalogue_port",value="8080",type="String"}
 ]
 
 secrets = [
-  {name="test100",value="8080",type="SecureString"}
+  {name="dev.mysql.pass",value="RoboShop@1",type="SecureString"},
+  {name="dev.payment.amqp_user",value="roboshop",type="SecureString"} ,
+  {name="dev.payment.amqp_pass",value="roboshop123",type="SecureString"},
+  {name="dev.rabbitmq.amqp_user",value="roboshop",type="SecureString"},
+  {name="dev.rabbitmq.amqp_pass",value="roboshop123",type="SecureString"}
 ]
 
 
