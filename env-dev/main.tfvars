@@ -1,48 +1,48 @@
 instances = {
   frontend = {
     name = "frontend"
-    type = "t2.micro"
+    type = "t3.small"
     monitor = "true"
   }
   mongodb = {
     name = "mongodb"
-    type = "t2.micro"
+    type = "t3.small"
   }
   catalogue = {
     name = "catalogue"
-    type = "t2.micro"
+    type = "t3.small"
     monitor = "true"
   }
   redis = {
     name = "redis"
-    type = "t2.micro"
+    type = "t3.small"
   }
   user = {
     name = "user"
-    type = "t2.micro"
+    type = "t3.small"
     monitor = "true"
   }
   cart = {
     name = "cart"
-    type = "t2.micro"
+    type = "t3.small"
     monitor = "true"
   }
   mysql = {
     name = "mysql"
-    type = "t2.micro"
+    type = "t3.small"
   }
   shipping = {
     name = "shipping"
-    type = "t2.micro"
+    type = "t3.small"
     monitor = "true"
   }
   rabbitmq = {
     name = "rabbitmq"
-    type = "t2.micro"
+    type = "t3.small"
   }
   payment = {
     name = "payment"
-    type = "t2.micro"
+    type = "t3.small"
     monitor = "true"
   }
 }
