@@ -7,3 +7,6 @@ module "ec2" {
   monitor = try(each.value["monitor"], false)
 }
 
+provider "aws" {
+  region = "us-east-1"
+}
