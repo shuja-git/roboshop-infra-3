@@ -12,3 +12,6 @@ resource "aws_ssm_parameter" "secret" {
   value = var.secrets[count.index].value
 }
 variable "secrets" {}
+data "aws_region" "current" {
+  name = "us-east-1"
+}
